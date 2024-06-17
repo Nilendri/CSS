@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        :root{
+            --box:blue;
+            --border:red;
+            --maxw:333px
+        }
+      .box {
+        
+        border: 2px solid var(--border);
+        width: 156px;
+        height: 134px;
+        background-color: var(--box);
+        margin: 2px 10px;
+    }
+    .container{
+        max-width: var(--maxw);
+        margin: auto;
+        background-color: var(--border);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        /* background-color: var(--box); */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+    </div>
+  </body>
+</html>

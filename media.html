@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            text-align: center;
+            background-color: red;
+            color: white;
+            font-size: 70px;
+            display: none;
+        }
+        @media only screen and(max-width:500px){
+            #box1{
+                display: block;
+            }
+        }
+        @media(min-width:300px) and   (max-width:500px){
+            #box2{
+                display: block;
+            }
+        }
+        @media(min-width:600px) and   (max-width:800px){
+            #box3{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">This is first</div>
+    <div class="box" id="box2">This is second</div>
+    <div class="box" id="box3">This is third</div>
+    <div class="box" id="box4">This is fourth</div>
+</body>
+</html>

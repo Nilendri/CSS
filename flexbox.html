@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        border: 2px solid black;
+        height: 500px;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-direction: row; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: row-reverse wrap-reverse; */
+
+        /* justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly; */
+
+        /* align-items: center; */
+        /* align-items: self-end; */
+        /* align-items: self-start; */
+        /* align-items: stretch; */
+      }
+      .top {
+        background-color: plum;
+        border: 2px solid blue;
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        padding: 3px;
+      }
+      #top1 {
+        /* it will go to last */
+        /* order: 1; */
+        /* will grow */
+        /* flex-grow: 3; */
+        /* sbse kamm shrink karega */
+        /* flex-shrink: 3; */
+      }
+      #top2 {
+        /* order: 2; */
+        /* flex-grow: 2; */
+        /* flex-shrink: 4; */
+        /* flex-basis: 700px; */
+        /* if flex direction is set to row then flex-basis control the width;
+        if flex direction is set to columns then flex-basis control the height; */
+      }
+      #top3 {
+        /* order: 1; */
+        /* flex: grow,shrink,basis; */
+        /* flex: 2 2 700px; */
+        /* align-self: self-end; */
+        /* align-self: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is heading</h1>
+    <div class="container">
+      <div class="top" id="top1">first</div>
+      <div class="top" id="top2">Second</div>
+      <div class="top" id="top3">Third</div>
+      <div class="top" id="top4">Four</div>
+    </div>
+  </body>
+</html>
